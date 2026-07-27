@@ -10,20 +10,19 @@ on:
   workflow_dispatch:
     inputs:
       CONFIG:
-        default: 'MTK-7981'
+        default: 'MT7981'
         required: true
         type: choice
         options:
           - MT7981
-          - MT7986
           - TEST
       SOURCE:
-        default: 'Yuzhii0718/immortalwrt-mt798x-6.6-padavanonly'
+        default: 'yejunhui-1/immortalwrt-mt798x-6.6-padavanonly'
         required: true
         type: choice
         options:
-         - Yuzhii0718/immortalwrt-mt798x-6.6-padavanonly
-         - chasey-dev/immortalwrt-mt798x-rebase
+         - yejunhui-1/immortalwrt-mt798x-6.6-padavanonly
+         - yelongtian0-svg/immortalwrt-mt798x-rebase
       BRANCH:
         default: 'openwrt-24.10-6.6'
         required: true
